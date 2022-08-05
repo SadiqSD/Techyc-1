@@ -8,10 +8,35 @@ import pandas as pd
 # csv = Pandas.to_csv("csv_file.csv")
 # print(Pandas)
 # print(csv)
-read = pd.read_csv("csv_file.csv")
-print(read.to_string())
+# read = pd.read_csv("csv_file.csv")
+# print(read.to_string())
+
+# def fold():
+#     times = 3
+#     name = input("what is your name? ")
+#     while name != "":
+#         times += 1
+#         print("Name recorded")
+#     else:
+#         print("Entry empty")
+#
+# fold()
 
 
+def fold(times, limit):
+    while times < limit:
+        name = input("What is your name? ")
+        if name == "":
+            print("Entry is empty ")
+            times += 1
+            if times == limit:
+                print("sorry you have to refresh the page")
+            else:
+                continue
+        else:
+            print("Name recorded")
+            break
+fold(0,3)
 
 
 
