@@ -20,23 +20,10 @@ import pandas as pd
 #     else:
 #         print("Entry empty")
 #
-# fold()
+####### OOP
 
+# do one mission at a time soldier
+list = ["apple","orange","banana","pear","orange"]
 
-def fold(times, limit):
-    while times < limit:
-        name = input("What is your name? ")
-        if name == "":
-            print("Entry is empty ")
-            times += 1
-            if times == limit:
-                print("sorry you have to refresh the page")
-            else:
-                continue
-        else:
-            print("Name recorded")
-            break
-fold(0,3)
-
-
+print(list.index("orange"))
 
