@@ -23,7 +23,8 @@ import pandas as pd
 ####### OOP
 
 # do one mission at a time soldier
-list = ["apple","orange","banana","pear","orange"]
-
-print(list.index("orange"))
-
+name = ""
+if name:
+    print("name recorded")
+else:
+    print("Pls input your name")
