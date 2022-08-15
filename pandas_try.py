@@ -22,9 +22,16 @@ import pandas as pd
 #
 ####### OOP
 
+
 # do one mission at a time soldier
-name = ""
-if name:
-    print("name recorded")
-else:
-    print("Pls input your name")
+# name = ["Sadiq","Murtala","Isa", "Aminu","Muhammad"]
+# age =  [18,47,18,58,19]
+# surname = ["Murtala","Muhammad","Aminu","Musa","Abdullahi"]
+# data = {"Name" : name,"Surname":surname , "Age" : age}
+#
+# df = pd.DataFrame(data, index=[1,2,3,4,5])
+# print(df)
+
+import sqlite3
+
+connect = sqlite3.connect("Citizen.db")
